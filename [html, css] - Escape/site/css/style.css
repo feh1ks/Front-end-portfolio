@@ -1,0 +1,603 @@
+/*------------------------------------*\
+#           CSS NAVIGATION
+#
+# 1. HEADER
+#   1.1 LOGO
+#   1.2 NAV
+# 2. MAIN
+#   2.1 BANNER
+#   2.2 SERVICES
+#   2.3 SKILLS
+#   2.4 CLIENTS
+#   2.4.1 CLIENTS LOGOS
+#   2.5 TEAM
+# 3. FOOTER
+#   3.1 SOCIAL
+#   3.2 CONTACT
+#   3.3 COPY
+# 
+\*------------------------------------*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-family: Arial, Helvetica, sans-serif}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ul li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration: none;font-family: Arial, Helvetica, sans-serif}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+.clear:after {
+    visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.container {
+    width: 860px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*------------------------------------*\
+# 1 HEADER
+\*------------------------------------*/
+header {
+    position: absolute;
+    width: 100%;
+}
+
+.header__container {
+    width: 940px;
+    margin: 42px auto 0;
+}
+/*# 1.1 LOGO
+\*------------------------------------*/
+.logo a {
+    background: url('../images/sprite.png') no-repeat 0 0;
+    width: 139px;
+	height: 28px;
+    display: block;
+}
+/*# 1.2 NAV
+\*------------------------------------*/
+nav {
+    line-height: 35px;
+}
+nav li {
+    float: left;
+    padding-left: 25px;
+}
+
+nav a {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+/*------------------------------------*\
+# 2 MAIN
+\*------------------------------------*/
+
+/*# 2.1 BANNER
+\*------------------------------------*/
+.banner {
+    padding: 14em 0 9em;
+    background-attachment: scroll, fixed;
+    background-image: url('../images/overlay.png'),url('../header_bg.jpg');
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h2 {
+    padding-bottom: 45px;
+    font-size: 27px;
+    font-weight: 100;
+}
+
+.banner p {
+    font-size: 59px;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 20px 65px;
+    border-radius: 5px;
+}
+/*# 2.2 SERVICES
+\*------------------------------------*/
+.service__first .left {
+    width: 555px;
+}
+
+.service__second .right {
+    width: 535px;
+}
+
+.service__second {
+    background: #fafafa;
+}
+
+.service-title {
+    font-size: 50px;
+}
+
+.service-title span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.service-text {
+    margin-top: 40px;
+    color:  #777777;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.service-img {
+    background: url('../images/sprite.png') no-repeat;
+}
+
+.service-img.web {
+    width: 220px;
+	height: 220px;
+    background-position: 0 -235px;
+}
+
+.service-img.idenity {
+    width: 271px;
+	height: 197px;
+    background-position: 0 -33px;
+}
+/*# 2.3 SKILLS
+\*------------------------------------*/
+.skills_col {
+    width: 374px;
+}
+
+.ml112 {
+    margin-left: 112px;
+}
+
+.skills_block {
+    margin-bottom: 50px;
+    height: 97px;
+}
+
+.skills_col .skills_block:last-child {
+    margin-bottom: 0;
+}
+
+.skills_block-title {
+    font-family: 'Didact Gothic', sans-serif;
+    color:  #222222;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.skills_block-text {
+    color:  #777777;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.skills_block .left:last-child {
+    margin-left: 20px;
+    width: 280px;
+}
+
+.skills_block-img {
+    background: url('../images/sprite.png') no-repeat;
+	width: 71px;
+	height: 71px;
+}
+
+.skills_block-img.branding {
+    background-position: 0 -551px;
+}
+
+.skills_block-img.mobile {
+    background-position: -74px -550px;
+}
+
+.skills_block-img.ui {
+    background-position: 0 -626px;
+}
+
+.skills_block-img.design {
+    background-position: -74px -627px;
+}
+
+.skills_block-img.anim {
+    background-position: 0 -702px;
+}
+
+.skills_block-img.photo {
+    background-position: -74px -702px;
+}
+
+/*# 2.4 CLIENTS
+\*------------------------------------*/
+.clients_container {
+    margin: 0 auto;
+    width: 934px;
+    padding: 100px 0;
+}
+
+.clients {
+    background:  #fafafa;
+}
+
+.clients-title {
+    font-size: 50px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.clients-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #777777;
+}
+
+.clients-title span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.client {
+    margin: 45px 0;
+}
+
+.client_block {
+    margin-top: 25px;
+    width: 663px;
+    height: 174px;
+}
+
+.client_block.right {
+    margin-right: 30px;
+    background: url('../images/Speak%20Box.png') no-repeat;
+}
+
+.client_block.left {
+    margin-left: 30px;
+    background: url('../images/Speak%20Box_2.png') no-repeat;
+}
+
+.client-img {
+    border-radius: 50%;
+    background-color:  #111111;
+    width: 221px;
+    height: 221px;
+}
+
+.client_block.right .client_block-text {
+    margin: 40px 85px 15px 100px;
+}
+
+.client_block.left .client_block-text {
+    margin: 40px 105px 15px 80px;
+}
+
+.client_block-text {
+    color:  #777777;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.client_block.right .client_block-name {
+    margin-left: 100px;
+}
+
+.client_block.left .client_block-name {
+    margin-left: 80px;
+}
+
+.client_block-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color:  #7690c5;
+}
+
+/*# 2.4.1 CLIENTS LOGOS
+\*------------------------------------*/
+.clients_logos {
+    margin: 50px auto;
+    width: 765px;
+}
+
+.clients_logos li {
+    margin-right: 40px;
+    float: left;
+    background: url('../images/sprite.png') no-repeat;
+}
+
+.clients_logos li:last-child {
+    margin: 0;
+}
+
+.clients_logos .evanto {
+    background-position: 0 -780px;
+    width: 161px;
+	height: 30px;
+}
+
+.clients_logos .wordpress {
+    background-position: 0 -814px;
+	width: 186px;
+	height: 42px;
+}
+
+.clients_logos .tuts {
+    background-position: 0 -862px;
+	width: 131px;
+	height: 41px;
+}
+
+.clients_logos .microlancer {
+    background-position: 0 -909px;
+	width: 167px;
+	height: 42px;
+}
+
+/*# 2.5 TEAM
+\*------------------------------------*/
+.team {
+    background-color:  #111111;
+}
+
+.team-title {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #777777;
+}
+
+.team-title span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.team_block {
+    margin: 80px auto 40px;
+    width: 780px;
+}
+
+.team_block_item {
+    float: left;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.team_block .team_block_item:last-child {
+    margin: 0;
+}
+
+.team_block_item-img {
+    margin-bottom: 20px;
+    width: 206px;
+    height: 206px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.team_block_item-title {
+    margin-bottom: 10px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #fff;
+}
+
+.team_block_item-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color:  #ebebeb;
+    font-size: 14px;
+}
+
+.team_block_item ul {
+    display: flex;
+    justify-content: center;
+}
+
+.team_block_item li {
+    margin: 10px 5px;
+}
+
+.team_block_social {
+    background: url('../images/sprite.png') no-repeat;
+    width: 41px;
+    height: 41px;
+    display: block;
+}
+
+.team_block_social.t {
+    background-position: 0 -461px;
+}
+
+.team_block_social.f {
+    background-position: -50px -461px;
+}
+
+.team_block_social.p {
+    background-position: -100px -461px;
+}
+
+.team_block_social.g {
+    background-position: -149px -461px;
+}
+
+.team-text {
+    width: 620px;
+    margin: 0 auto;
+    color: #ebebeb;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+/*------------------------------------*\
+# 3 FOOTER
+\*------------------------------------*/
+footer {
+    background-color:  #7690c5;
+}
+
+.footer_container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.footer-col {
+    width: 50%;
+    float: left;
+}
+
+.footer-title {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-subtitle {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 25px;
+    margin: 0 40px 45px 0;
+}
+
+.footer-title span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/*# 3.1 SOCIAL
+\*------------------------------------*/
+.footer_social-col {
+    width: 50%;
+    float: left;
+}
+
+.footer_solial a {
+    float: left;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 38px;
+    color: #fff;
+}
+
+.footer_solial span {
+    margin-right: 15px;
+    background: url('../images/sprite.png') no-repeat;
+    width: 27px;
+    height: 29px;
+    display: block;
+    float: left;
+}
+
+.footer_solial .m {
+    background-position: 0 -956px;
+}
+
+.footer_solial .t {
+    background-position: 0 -992px;
+}
+
+.footer_solial .g {
+    background-position: 0 -1023px;
+}
+
+.footer_solial .e {
+    background-position: -34px -956px;
+}
+
+.footer_solial .f {
+    background-position: -34px -992px;
+}
+
+.footer_solial .p {
+    background-position: -34px -1023px;
+}
+
+/*# 3.2 CONTACT
+\*------------------------------------*/
+.footer_contact {
+    margin-left: 10px;
+}
+
+.footer_contact-input[type=text] {
+    margin-bottom: 30px;
+}
+
+.footer_contact-input[type=email] {
+    margin-bottom: 20px;
+}
+
+.footer_contact-input,
+.input-message {
+    width: 420px;
+    padding: 10px 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #bbb;
+}
+
+.footer_divider {
+    margin: 0 auto;
+    width: 940px;
+    height: 1px;
+    background-color: #87a0d2;
+}
+
+/*# 3.3 COPY
+\*------------------------------------*/
+.footer-copyright {
+    padding: 30px 0;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #fff;
+}

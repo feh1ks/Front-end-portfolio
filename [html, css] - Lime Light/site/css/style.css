@@ -1,0 +1,362 @@
+/*------------------------------------*\
+#           CSS NAVIGATION
+#
+# 1. HEADER
+#   1.1 LOGO
+#   1.2 NAV
+# 2. MAIN
+#   2.1 ABOUT
+#   2.2 TEAM
+# 3. FOOTER
+#   3.1 SHOP
+#   3.2 TWEETS
+#   3.3 FOOTER NAV
+#   3.4 SOCIAL
+#   3.5 COPYRIGHT
+#
+\*------------------------------------*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-family: Arial, Helvetica, sans-serif}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ul li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration: none;font-family: Arial, Helvetica, sans-serif}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+.clear:after {
+    visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto
+}
+/*------------------------------------*\
+#1 HEADER
+\*------------------------------------*/
+
+/*#1.1 LOGO
+\*------------------------------------*/
+.logo {
+    float: left;
+    margin-top: 32px;
+}
+
+.logo a {
+	background: url('../images/sprite.png') no-repeat 0 0;
+	width: 170px;
+	height: 33px;
+    display: block;
+}
+/*#1.2 NAV
+\*------------------------------------*/
+.header__nav {
+    float: right;
+    margin-top: 43px;
+}
+
+.header__nav .icon-home {
+	background: url('../images/sprite.png') no-repeat 0 -34px;
+	width: 13px;
+	height: 12px;
+    display: block;
+}
+
+.header__nav li {
+    float: left;
+    padding-left: 41px;
+}
+
+.header__nav a {
+    font-size: 18px;
+    color: #000;
+}
+
+/*------------------------------------*\
+#2 MAIN
+\*------------------------------------*/
+main {
+    margin-bottom: 75px;
+}
+/*#2.1 ABOUT
+\*------------------------------------*/
+.about {
+    margin-bottom: 75px;
+}
+
+.about__title {
+    text-align: center;
+    margin: 104px 0 50px;
+    font-size: 38px;
+}
+
+.about__text {
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.about__text.mb {
+    margin-bottom: 37px;
+}
+
+.about__benefits-block.ml {
+    margin-left: 20px;
+}
+
+.about__benefits-block {
+    width: 300px;
+    float: left;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.benefits-img {
+    margin: 0 auto 60px;
+    background: url('../images/sprite.png') no-repeat;
+    width: 100px;
+	height: 101px;
+}
+
+.benefits-img.one {
+    background-position: 0 -47px;
+}
+
+.benefits-img.two {
+    background-position: 0 -148px;
+}
+
+.benefits-img.three {
+    background-position: 0 -250px;
+}
+
+.benefits-title {
+    font-size: 18px;
+}
+
+.benefits-text {
+    margin-top: 20px;
+    line-height: 23px;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+/*#2.2 TEAM
+\*------------------------------------*/
+.team__title {
+    text-align: center;
+    font-size: 38px;
+    margin: 75px 0 50px;
+}
+
+.team__member-block {
+    width: 300px;
+    height: 465px;
+    text-align: center;
+}
+
+.team__line-one .team__member-block {
+    float: left;
+}
+
+.member-img {
+    border-radius: 100%;
+}
+
+.member-title {
+    margin: 20px 0 10px;
+}
+
+.member-subtitle {
+    font-size: 14px;
+}
+
+.member-text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 35px;
+}
+
+.team__member-block.ml {
+    margin-left: 20px;
+}
+
+.team__line-two {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team__line-two .team__member-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*------------------------------------*\
+#3 FOOTER
+\*------------------------------------*/
+footer > .container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-bg {
+    padding: 50px 0;
+    background: #222222;
+}
+
+.footer__col {
+    width: 440px;
+    float: left;
+}
+/*#3.1 SHOP
+\*------------------------------------*/
+.shop-title {
+    color: #fff;
+    font-size: 18px;
+}
+
+.shop__block {
+    margin-top: 20px;
+    color: #eee;
+}
+
+.shop__block-img {
+    float: left;
+    margin-right: 30px;
+}
+
+.shop__block-text {
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.shop__block-button {
+    float: left;
+    position: relative;
+    padding: 9px 50px 9px 23px;
+    background: #86c840;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.shop__button-icon {
+    position: absolute;
+    display: inline-block;
+	width: 9px;
+	height: 13px;
+    background: url('../images/sprite.png') no-repeat 0 -352px;
+    top: 9px;
+    right: 25px;
+}
+
+/*#3.2 TWEETS
+\*------------------------------------*/
+.tweets {
+    margin-left: 60px;
+}
+.tweets-title {
+    color: #fff;
+    font-size: 18px;
+}
+
+.tweets__block {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 25px;
+    color: #dcdcdc;
+    line-height: 19px;
+}
+
+.tweets__block-img {
+    position: absolute;
+    left: 0;
+    background: url('../images/sprite.png') no-repeat 0 -365px;
+    height: 14px;
+    width: 20px;
+}
+
+.tweets__block-text,
+.tweets__block-tag {
+    font-size: 15px;
+}
+
+.tweets__block-time {
+    font-size: 12px;
+}
+
+/*#3.3 FOOTER NAV
+\*------------------------------------*/
+.footer__nav {
+    float: left;
+    margin-top: 15px;
+}
+
+.footer__nav li {
+    float: left;
+    margin-right: 30px;
+}
+
+.footer__nav a {
+    color: #555555;
+    font-size: 14px;
+}
+
+/*#3.4 SOCIAL
+\*------------------------------------*/
+.footer__social {
+    float: left;
+    margin-left: 85px;
+}
+
+.footer__social li {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer__social a {
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    width: 41px;
+	height: 41px;
+    display: block;
+}
+
+.footer__social-t {
+    background-position: 0 -379px;
+}
+
+.footer__social-f {
+    background-position: 0 -421px;
+}
+
+.footer__social-p {
+    background-position: 0 -463px;
+}
+
+.footer__social-g {
+    background-position: 0 -505px;
+}
+
+/*#3.5 COPYRIGHT
+\*------------------------------------*/
+.footer__copyright {
+    float: right;
+    margin-top: 15px;
+    color: #555555;
+    font-size: 13px;
+}

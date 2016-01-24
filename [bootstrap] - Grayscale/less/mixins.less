@@ -1,0 +1,96 @@
+//out: null
+
+//  Mixins
+
+// Responsive mixins for bootstrap
+
+// Screen > 480px
+.responsive-min-phone(@rules) {
+    @media (min-width: @screen-phone) {
+        @rules();
+    }
+}
+
+// Screen < 480px
+.responsive-max-phone(@rules) {
+    @media (max-width: @screen-phone) {
+        @rules();
+    }
+}
+
+// Screen > 768px
+.responsive-min-tablet(@rules) {
+    @media (min-width: @screen-tablet) {
+        @rules();
+    }
+}
+
+// Screen < 768px
+.responsive-max-tablet(@rules) {
+    @media (max-width: @screen-tablet) {
+        @rules();
+    }
+}
+
+// Screen > 992px
+.responsive-min-desktop(@rules) {
+    @media (min-width: @screen-desktop) {
+        @rules();
+    }
+}
+
+// Screen < 992px
+.responsive-max-desktop(@rules) {
+    @media (max-width: @screen-desktop) {
+        @rules();
+    }
+}
+
+// Screen > 1200px
+.responsive-min-desktop-lg(@rules) {
+    @media (min-width: @screen-lg-desktop) {
+        @rules();
+    }
+}
+
+// Screen < 1200px
+.responsive-max-desktop-lg(@rules) {
+    @media (max-width: @screen-lg-desktop) {
+        @rules();
+    }
+}
+
+// Fonts
+
+.brand-font() {
+    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.secondary-font() {
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+//
+.transition-all() {
+    transition: all .3s ease-in-out;
+}
+
+
+// Keyframe animation
+.keyframes(@name; @arguments) {
+    @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+    animation: @arguments;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,309 @@
+//out: ../css/style.min.css, compress: true, autoprefix: true
+@import "less/variables.less";
+@import "variables.less";
+@import "mixins.less";
+
+* {
+    outline: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    .brand-font;
+    color: white;
+    background-color: black;
+}
+
+@{headings} {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    .secondary-font;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    
+    .responsive-min-tablet ({
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    })
+}
+
+a {
+    color: @primary;
+    .transition-all;
+    
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: darken(@primary, 20%);
+    }
+}
+
+.light {
+    font-weight: 400;
+}
+
+// Navigation
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid fade(white, 30%);
+    text-transform: uppercase;
+    .secondary-font;
+    background-color: black;
+    
+    // Logo
+    .navbar-brand {
+        font-weight: 700;
+    }
+    
+    .navbar-toggle {
+        padding: 0;
+        font-size: 22px;
+        color: white;
+    }
+    
+    a {
+        color: white;
+    }
+    
+    .nav {
+        > li {
+            
+            // Navbar links
+            > a {
+                transition: background .3s ease-in-out;
+                
+                // Navbar links hover
+                &:hover {
+                    color: fade(white, 80%);
+                    background-color: transparent;
+                }
+                
+                &:focus,
+                &:active {
+                    background-color: transparent;
+                }
+            }
+            
+            // Navbar link active
+            &.active {
+                > a,
+                > a:focus {
+                    background-color: fade(white, 30%);
+
+                    // Navbar-link active hover
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+    .responsive-min-tablet ({
+        padding: 20px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background-color: transparent;
+        transition: background .35s ease-in-out,padding .35s ease-in-out;
+        
+        &.affix {
+            padding: 0;
+            background: black;
+            border-bottom: 1px solid fade(white, 30%);
+        }
+    })
+    
+}
+
+
+// Banner
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding: 100px 0;
+    background: url('../img/intro-bg.jpg') bottom center scroll;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+    &-body {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+        h1 {
+            font-size: 40px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+    }
+    
+    .responsive-min-tablet ({
+        min-height: 100%;
+        padding: 0;
+        
+        &-body {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            h1 {
+                font-size: 100px;
+            }
+            
+            p {
+                font-size: 26px;
+            }
+        }
+    })
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    color: white;
+    background-color: transparent;
+    transition: background .3s ease-in-out;
+    
+    &:hover,
+    &:focus {
+        color: white;
+        background: fade(white, 10%);
+    }
+    
+    &:hover {
+        i.animated {
+            .animation(pulse 1.5s linear infinite)
+        }
+    }
+}
+
+
+.keyframes(pulse;{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+});
+
+
+section {
+    padding-top: 100px;
+    
+    .responsive-min-tablet ({
+        padding-top: 150px;
+    })
+}
+
+.download-body {
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+    background: #000 url('../img/downloads-bg.jpg') center center;
+    background-size: cover;
+    
+    .responsive-min-tablet ({
+        padding: 100px 0;
+    })
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    
+    .responsive-min-tablet ({
+        height: 400px;
+        margin-top: 200px;
+    })
+}
+
+
+// Buttons
+.btn {
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 0;
+    .secondary-font;
+    .transition-all;
+    
+    &-default {
+        border: 1px solid @primary;
+        color: @primary;
+        background-color: transparent;
+        
+        &:hover,
+        &:focus {
+            border: 1px solid @primary;
+            color: black;
+            background-color: @primary;
+        }
+    }
+}
+
+
+ul.contact-social-buttons {
+    margin-top: 0;
+    
+    li {
+        a {
+            min-width: 170px;
+        }
+        
+        .responsive-max-tablet ({
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        })
+    }
+    
+    .responsive-max-desktop-lg ({
+        margin-top: 15px;
+    })
+    
+}
+
+// Footer
+footer {
+    padding: 50px 0;
+    p {
+        margin: 0;
+    }
+}
+
+// Extras
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: fade(white, 20%);
+}
+
+img::selection {
+    background: transparent;
+}
+
+
+

@@ -1,0 +1,289 @@
+/*------------------------------------*\
+#           CSS NAVIGATION
+#
+# 1. HEADER
+# 2. FEATURES
+#   2.1 MOBILE
+# 3. TESTIMOTIONALS
+#   3.1 SOCIAL
+# 4. FOOTER
+# 
+\*------------------------------------*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-family: Arial, Helvetica, sans-serif}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ul li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration: none;font-family: Arial, Helvetica, sans-serif}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+.clear:after {
+    visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.left {float: left;}
+.right {float: right;}
+/*------------------------------------*\
+# HEADER
+\*------------------------------------*/
+header {
+    height: 610px;
+    background: url(../images/h_bg.jpg) no-repeat center center;
+    background-size: cover; 
+}
+
+.h_container {
+    width: 1070px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.h_col {
+    width: 503px;
+    float: left;
+    height: inherit;
+    position: relative;
+}
+
+.ml64 { margin-left: 64px; }
+
+.h_logo {
+    float: left;
+    background-image: url(../images/h_logo.png);
+    width: 137px;
+    height: 60px;
+    margin-top: 175px;
+}
+
+.h_text {
+    float: left;
+    width: 453px;
+    margin-top: 53px;
+    color:  #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.h_mobile {
+    margin-top: 32px;
+    float: left;
+}
+
+.ios,
+.android {
+    background-size: 100%;
+    display: block;
+}
+
+.ios { background-image: url(../images/app%20store.png); }
+
+.android { background-image: url(../images/google%20play.png); }
+
+.h_mobile .ios {
+    width: 193px;
+    height: 64px;
+}
+
+.h_mobile .android {
+    width: 186px;
+    height: 64px;
+}
+
+.h_mobile .ios,
+.h_mobile .android {
+    float: left;
+}
+
+.h_mobile .android { margin-left: 13px; }
+
+.h_hand {
+    background-image: url(../images/h_hand.png);
+    width: 439px;
+    height: 507px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+/*------------------------------------*\
+# FEATURES
+\*------------------------------------*/
+.f_container {
+    margin: 0 auto;
+    padding: 100px 0 50px;
+    width: 1055px;
+    position: relative;
+}
+
+.f_col { width: 295px; }
+
+.f_block { margin-top: 55px; }
+
+.f_block-title {
+    color:  #222222;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.f_block-text {
+    margin-top: 23px;
+    color:  #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.f_iphone {
+    position: absolute;
+    background-image: url(../images/iphone.png);
+    width: 464px;
+    height: 806px;
+    top: 60px;
+    left: 300px;
+}
+/*# MOBILE
+\*------------------------------------*/
+.f_grey { background-color:  #e3e3e3; }
+
+.f_grey_container {
+    width: 1095px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.f_grey .f_block { margin-top: 0; }
+
+.f_grey .f_block-title,
+.f_grey .f_block-text {
+    text-align: center;
+}
+
+.f_grey .ios,
+.f_grey .android {
+    margin: 24px auto 0;
+}
+
+.f_grey .ios {
+    width: 153px;
+    height: 51px;
+}
+
+.f_grey .android {
+    width: 148px;
+    height: 51px;
+}
+/*------------------------------------*\
+# TESTIMOTIONALS
+\*------------------------------------*/
+.t_title {
+    margin-top: 65px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.t_subtitle {
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.people {
+    margin-top: 50px;
+    width: 100%;
+    height: 320px;
+    background: url(../images/people.jpg) repeat-x;
+}
+
+.t_social_title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
+.t_social_subtitle {
+    margin-top: 15px;
+    color:  #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+/*# SOCIAL
+\*------------------------------------*/
+.t_social { padding: 60px 0; }
+
+.t_social_icons {
+    width: 254px;
+    margin: 20px auto 0;
+}
+
+.t_social_icons li {
+    float: left;
+    margin-right: 10px;
+}
+
+.t_social_icons li:last-child { margin-right: 0; }
+
+.t_social_icons li a {
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+
+.t_social_icons .t {
+    background-image: url(../images/twitter.png);
+}
+
+.t_social_icons .f { background-image: url(../images/facebook.png); }
+
+.t_social_icons .p { background-image: url(../images/pinterest.png); }
+
+.t_social_icons .g { background-image: url(../images/google_plus.png); }
+
+.t_social_icons .l { background-image: url(../images/linkedin.png); }
+
+.t_social_icons .y { background-image: url(../images/youtube.png); }
+
+/*------------------------------------*\
+# FOOTER
+\*------------------------------------*/
+footer { background: #e3e3e3; }
+
+.foot_nav {
+    width: 544px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.foot_nav li {
+    float: left;
+    margin-right: 36px;
+}
+
+.foot_nav li:last-child { margin-right: 0; }
+
+.foot_nav li a {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+

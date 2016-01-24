@@ -1,0 +1,193 @@
+/*------------------------------------*\
+#           CSS NAVIGATION
+#   1. NAV
+#   2. BANNER
+#       2.1 banner responsive styles
+#       2.2 banner social buttons
+#   3. SECTION
+#   4. CONTACT
+#       4.1 contact responsive styles
+#   5. FOOTER
+# 
+\*------------------------------------*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+/*------------------------------------*\
+# NAV
+\*------------------------------------*/
+nav,
+.navbar-brand {
+    font-size: 14px;
+}
+
+/*------------------------------------*\
+# BANNER
+\*------------------------------------*/
+.banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.banner-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.banner-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.banner-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/*# banner responsive styles
+\*------------------------------------*/
+@media(max-width:767px) {
+    .banner-message {
+        padding-bottom: 15%;
+    }
+
+    .banner-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .banner-divider {
+        width: 100%;
+    }
+}
+
+/*# banner social buttons
+\*------------------------------------*/
+.banner-social-buttons span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*------------------------------------*\
+# SECTION
+\*------------------------------------*/
+.section {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-gray {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.section-divider {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*------------------------------------*\
+# CONTACT
+\*------------------------------------*/
+.contact {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.contact h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.contact ul {
+    margin-bottom: 0;
+}
+
+.contact-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+/*# contact responsive styles
+\*------------------------------------*/
+@media(max-width:1199px) {
+    ul.contact-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .contact h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.contact-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.contact-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*------------------------------------*\
+# FOOTER
+\*------------------------------------*/
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}

@@ -1,0 +1,597 @@
+/*------------------------------------*\
+#           CSS NAVIGATION
+#
+# 1. HEADER
+#   1.1 logo
+#   1.2 nav
+#   1.3 banner
+# 2. SERVICES
+#   2.1 services-block
+# 3. PORTFOLIO
+#   3.1 portfolio-block
+# 4. ABOUT
+#   4.1 about-block
+#   4.2 about-block-last
+# 5. TEAM
+#   5.1 team-block
+#   5.2 team-block-social
+# 6. LOGOS
+# 7. CONTACT
+#   7.1 contact-form
+# 8. FOOTER
+#   8.1 copy
+#   8.2 footer-social
+# 
+\*------------------------------------*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-family: Arial, Helvetica, sans-serif}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ul li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration: none;font-family: Arial, Helvetica, sans-serif}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+.right { float: right; }
+.left { float: left; }
+
+.clear:after {
+    visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+/*------------------------------------*\
+# HEADER
+\*------------------------------------*/
+header {
+    position: absolute;
+    width: 100%;
+}
+
+.h_container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*# logo
+\*------------------------------------*/
+header .logo {
+    margin: 44px 0 0 6px;
+}
+/*# nav
+\*------------------------------------*/
+header nav {
+    margin: 40px 0 0 0;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 45px;
+}
+
+header nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+/*# banner
+\*------------------------------------*/
+.banner {
+    padding: 17.2em 0 11.4em;
+    background: url('../images/h_banner.jpg') 50% 50%;
+    background-size: cover;
+}
+.banner h1 {
+    font-family: 'Droid Serif', serif;
+    color:  #ffffff;
+    font-size: 37px;
+    font-style: italic;
+    text-align: center;
+}
+
+.banner h2 {
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #ffffff;
+    font-size: 71px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.banner p {
+    text-align: center;
+    padding-top: 75px;
+}
+
+.banner p a {
+    padding: 22px 50px;
+    text-align: center;
+    color:  #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    background-color:  #fed136;
+}
+
+/*------------------------------------*\
+# SERVICES
+\*------------------------------------*/
+.container-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: center;
+}
+
+.container-subtitle {
+    font-family: 'Droid Serif', serif;
+    color: #777777;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*# services-block
+\*------------------------------------*/
+.services-block {
+    width: 276px;
+    margin-top: 80px;
+    margin-right: 56px;
+}
+
+.services-block:last-child {
+    margin-right: 0;
+}
+
+.services-block img {
+    display: block;
+    margin: 0 auto;
+}
+
+.services-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    color:  #222222;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.services-block p {
+    font-family: RobotoSlab;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+/*------------------------------------*\
+# PORTFOLIO
+\*------------------------------------*/
+.portfolio {
+    background-color: #f7f7f7;
+}
+
+.portfolio .container-subtitle {
+    padding-bottom: 25px;
+}
+/*# portfolio-block
+\*------------------------------------*/
+.portfolio-row {
+    margin-top: 50px;
+}
+
+.portfolio-block {
+    margin-right: 33px;
+    background: #fff;
+    width: 291px;
+    height: 394px;
+}
+
+.portfolio-block:last-child {
+    margin-right: 0;
+}
+
+.portfolio-block h1,
+.portfolio-block p {
+    text-align: center;
+}
+
+.portfolio-block h1 {
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #333333;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.portfolio-block p {
+    margin-top: 5px;
+    font-family: DroidSerif;
+    color:  #737373;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/*------------------------------------*\
+# ABOUT
+\*------------------------------------*/
+.about .container-subtitle {
+    margin-bottom: 73px;
+}
+
+/*# about-block
+\*------------------------------------*/
+.about-block {
+    position: relative;
+    width: 528px;
+    height: 275px;
+}
+
+.about-block.left {
+    margin-left: 32px;
+}
+
+.about-block.right {
+    margin-right: 32px;
+}
+
+.about-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    color:  #222222;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.about-block h1 span {
+    text-transform: uppercase;
+}
+
+.about-block p {
+    font-family: RobotoSlab;
+    color:  #777777;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+.about-block.left h1,
+.about-block.left p {
+    text-align: right;
+}
+
+.about-block.right h1,
+.about-block.right p {
+    text-align: left;
+}
+
+.about-block.left img {
+    margin-left: 40px;
+}
+
+.about-block.right img {
+    margin-right: 40px;
+}
+
+.about-block-line {
+    position: absolute;
+    bottom: -2px;
+}
+
+.about-block.left .about-block-line {
+    right: 89px;
+}
+
+.about-block.right .about-block-line {
+    left: 89px;
+}
+
+/*# about-block-last
+\*------------------------------------*/
+.about-block-last {
+    text-align: center;
+}
+
+/*------------------------------------*\
+# TEAM
+\*------------------------------------*/
+.team {
+    background-color: #f9f9f9;
+}
+
+.team .container-subtitle {
+    margin-bottom: 85px;
+}
+/*# team-block
+\*------------------------------------*/
+.team-blocks {
+    width: 780px;
+    margin: 0 auto;
+}
+
+.team-block {
+    margin-right: 60px;
+}
+
+.team-block:last-child {
+    margin-right: 0;
+}
+
+.team-block img {
+    border-radius: 100%;
+}
+
+.team-block h1,
+.team-block h2 {
+    text-align: center;
+}
+
+.team-block h1 {
+    margin-top: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    }
+
+.team-block h2 {
+    margin-top: 8px;
+    font-family: RobotoSlab;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*# team-block-social
+\*------------------------------------*/
+.team-block-social {   
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.team-block-social li {
+    margin: 0 5px;
+}
+
+.team-block-social a {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-repeat: no-repeat;
+}
+
+.team-block-social .t a {
+    background-image: url(../images/twitter.png);
+}
+
+.team-block-social .f a {
+    background-image: url(../images/Facebook.png);
+}
+
+.team-block-social .p a {
+    background-image: url(../images/Pinterest.png);
+}
+
+.team-block-social .g a {
+    background-image: url(../images/Google_plus.png);
+}
+
+.team-block-social .t:hover a {
+    background-image: url(../images/Twitter_h.png);
+}
+
+.team-block-social .f:hover a {
+    background-image: url(../images/Facebook_h.png);
+}
+
+.team-block-social .p:hover a {
+    background-image: url(../images/Pinterest_h.png);
+}
+
+.team-block-social .g:hover a {
+    background-image: url(../images/Google_plus-h.png);
+}
+
+.team-text {
+    width: 600px;
+    margin: 50px auto 0;
+    font-family: RobotoSlab;
+    color:  #777777;
+    font-size: 18px; 
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*------------------------------------*\
+# LOGOS
+\*------------------------------------*/
+.l_container {
+    width: 805px;
+    margin: 0 auto;
+    padding: 60px 0 100px;
+}
+
+.logos img {
+    float: left;
+    margin: 0 20px;
+}
+
+/*------------------------------------*\
+# CONTACT
+\*------------------------------------*/
+.contact {
+    background: #222222 url(../images/Map.png) 100% 100% no-repeat;
+}
+
+.contact_container {
+    width: 940px;
+    padding: 110px 0 95px;
+    margin: 0 auto;
+}
+
+.contact .container-title {
+    color: #fff;
+}
+/*# contact-form
+\*------------------------------------*/
+.contact-form-col {
+    margin-top: 80px;
+    width: 50%;
+}
+
+.contact-form-col input {
+    margin-bottom: 23px;
+}
+
+.contact-form-col input:last-child {
+    margin-bottom: 0;
+}
+
+.contact-form-col input,
+.contact-form-col textarea {
+    outline: none;
+    width: 415px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form-col input::-webkit-input-placeholder,
+.contact-form-col textarea::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color:  #bbbbbb;
+}
+
+.contact-form-col input:focus::-webkit-input-placeholder,
+.contact-form-col textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+.contact-form p {
+    text-align: center;
+}
+
+.contact-form p input {
+    margin-top: 40px;
+    padding: 22px 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color:  #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    background-color:  #fed136;
+}
+/*------------------------------------*\
+# FOOTER
+\*------------------------------------*/
+.footer_container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0 30px;
+}
+
+/*# copy
+\*------------------------------------*/
+.footer-copy {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/*# footer-social
+\*------------------------------------*/
+.footer-social {
+    margin-left: 107px;
+}
+
+.footer-social li {
+    float: left;
+    margin-right: 9px;
+}
+
+.footer-social a {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-repeat: no-repeat;
+}
+
+.footer-social .t a {
+    background-image: url(../images/f_twitter.png);
+}
+
+.footer-social .f a {
+    background-image: url(../images/f_facebook.png);
+}
+
+.footer-social .p a {
+    background-image: url(../images/f_pinterest.png);
+}
+
+.footer-social .g a {
+    background-image: url(../images/f_google_plus.png);
+}
+
+.footer-social .t:hover a {
+    background-image: url(../images/f_twitter-h.png);
+}
+
+.footer-social .f:hover a {
+    background-image: url(../images/f_facebook-h.png);
+}
+
+.footer-social .p:hover a {
+    background-image: url(../images/f_pinterest-h.png);
+}
+
+.footer-social .g:hover a {
+    background-image: url(../images/f_google_plus-h.png);
+}
