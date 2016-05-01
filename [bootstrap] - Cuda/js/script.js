@@ -25,15 +25,6 @@ $('#mainNav').affix({
     }
 })
 
-// Animated circular progress bar
-//$('.circle').circleProgress({
-//    size: 160,
-//    startAngle: 300,
-//    thickness: 16,
-//})
-
-
-
 var el = $('.circle'),
     inited = false;
 
@@ -49,9 +40,6 @@ el.on('appear', function() {
         inited = true;
     }
 });
-
-
-
 
 $('#circle-1').circleProgress({
     value: 0.9,
@@ -123,16 +111,3 @@ var wow = new WOW(
     }
 );
 wow.init();
-
-
-
-
-
-
-
-
-
-
-
-
-
