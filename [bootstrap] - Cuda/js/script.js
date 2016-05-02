@@ -34,7 +34,7 @@ el.on('appear', function() {
     if (!inited) {
         el.circleProgress({
             size: 160,
-            startAngle: 300,
+            startAngle: -Math.PI/2,
             thickness: 16,
         });
         inited = true;
