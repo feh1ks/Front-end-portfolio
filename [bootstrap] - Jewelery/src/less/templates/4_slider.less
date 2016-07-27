@@ -1,0 +1,46 @@
+/* Slider
+======================================*/
+#section-4 {
+	background: @brand-section-bg;
+
+	img {
+		width: initial;
+	}
+
+	.divider {
+		margin-top: 25px;
+		margin-bottom: 35px;
+	}
+
+	.btn {
+		.button-variant(@color:#fff, @background:@brand-primary, @border:@brand-primary);
+		margin-top: 45px;
+		padding: 14px 36px;
+		font-size: 18px;
+		border-radius: 3px;
+	}
+
+	.owl-prev,
+    .owl-next {
+        .transition-all;
+        position: absolute;
+        padding: 0 25px;
+        color: @brand-gray;
+        background-color: transparent;
+        font-size: 70px;
+    	line-height: 70px;
+        top: 30%;
+
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    .owl-prev {
+        left: 15px;
+    }
+
+    .owl-next {
+        right: 15px;
+    }
+}

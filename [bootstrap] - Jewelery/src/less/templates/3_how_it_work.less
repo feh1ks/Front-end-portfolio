@@ -1,0 +1,57 @@
+/* How Does It Work
+======================================*/
+#section-2 {
+
+	
+
+	[class*='step-img'] {
+		.transition-all;
+		width: 64px;
+		height: 64px;
+		background-repeat: no-repeat;
+	}
+
+	.step-img-1 { background-image: url(../img/how_it_work_1.png) }
+	.step-img-2 { background-image: url(../img/how_it_work_2.png) }
+	.step-img-3 { background-image: url(../img/how_it_work_3.png) }
+	.step-img-4 { background-image: url(../img/how_it_work_4.png) }
+	.step-img-5 { background-image: url(../img/how_it_work_5.png) }
+	.step-img-6 { background-image: url(../img/how_it_work_6.png) }
+
+	.col-md-4:hover {
+		.step-img-1 { background-image: url(../img/how_it_work_1_h.png) }
+		.step-img-2 { background-image: url(../img/how_it_work_2_h.png) }
+		.step-img-3 { background-image: url(../img/how_it_work_3_h.png) }
+		.step-img-4 { background-image: url(../img/how_it_work_4_h.png) }
+		.step-img-5 { background-image: url(../img/how_it_work_5_h.png) }
+		.step-img-6 { background-image: url(../img/how_it_work_6_h.png) }
+	}
+
+	.step-item {
+		margin-top: 55px;
+
+		h4 {
+			margin-top: 30px;
+		    margin-bottom: 18px;
+		}
+	}
+
+	@media @min-desktop {
+		.section-header {
+			margin-bottom: 65px;
+		}
+	}
+
+	@media @max-desktop {
+		[class*='step-img'] {
+			margin: 0 auto;
+		    background-size: 100px;
+	        width: 100px;
+		    height: 100px;
+		}
+
+		.col-md-4 {
+			text-align: center;
+		}
+	}
+}

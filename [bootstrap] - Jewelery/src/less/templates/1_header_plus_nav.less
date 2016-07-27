@@ -1,0 +1,169 @@
+/* Navbar
+======================================*/
+.navbar-default {
+
+    // Logo
+    .navbar-brand {
+        .transition-all;
+        margin: 0;
+
+            h3 {
+            	color: #fff;
+            	margin: 0;
+            }
+    }
+
+    // Mobile menu
+    .navbar-collapse {
+        border-color: fade(#fff, 2%);
+    }
+
+    // Toggle icon
+    .navbar-toggle {
+        background-color: @brand-primary;
+    }
+
+    .nav {
+        > li {
+
+            // Nav link
+            > a {
+            	color: #fff;
+                letter-spacing: 0.8px;
+                line-height: 30px;
+
+                &:hover {
+                	color: @brand-primary;
+                }
+            }
+
+            // Nav link active
+            &.active {
+                border-radius: 0;
+            }
+        }
+
+        &.nav-social li a {
+			padding-left: 10px;
+			padding-right: 10px;
+    	}
+    }
+
+    // Nav media styles
+    @media @min-desktop {
+
+        // Navbar before offset
+        .transition-all;
+        background-color: transparent;
+        padding: 25px 0;
+        border: 0;
+
+	    .nav li a {
+	    	.transition-all;
+            padding-right: 25px;
+		    padding-left: 10px;
+        }
+
+        // Logo
+        .navbar-brand {
+            padding: 12px 0 0 18px;
+        }
+
+        // Nav link Active
+        .nav > .active > a {
+            border-radius: 3px;
+        }
+
+        &.affix {
+        	padding: 10px 0 0;
+        	background: #222222;
+        }
+    }
+}
+
+
+/* Banner
+======================================*/
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding: 100px 0;
+    background: url('../img/header_bg.jpg') center center scroll no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+    .header-content {
+        position: relative;
+        padding: 100px 15px;
+        width: 100%;
+
+        &-inner {
+
+            p {
+            	color: #fff;
+				font-weight: 300;
+            }
+
+            h1 {
+				color: #fff;
+				text-transform: uppercase;
+            }
+
+            .h_btn_1 {
+				.button-variant(@color:#fff, @background:@brand-primary, @border:@brand-primary);
+				margin-right: 20px;
+				padding: 14px 36px;
+				font-size: 18px;
+				border-radius: 3px;
+			}
+
+			.h_btn_2 {
+				.button-variant(@color:#fff, @background:transparent, @border:#fff);
+				padding: 13px 36px;
+				font-size: 18px;
+				border-width: 2px;
+				border-radius: 3px;
+			}
+
+            .h_btn_2:hover {
+				border-color: @brand-primary;
+				color: @brand-primary;
+            }
+
+        }
+    }
+
+    // Banner Responsive Styles
+    @media @min-desktop {
+        min-height: 800px;
+        text-align: left;
+        padding: 0;
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 50px;
+
+            &-inner {
+                max-width: 920px;
+                margin-left: auto;
+                margin-right: auto;
+
+                p {
+	            	margin-top: 80px;
+					font-size: 24px;
+					line-height: 60px;
+	            }
+
+	            h1 {
+	        	    margin-top: 15px;
+	        	    margin-bottom: 35px;
+					font-size: 60px;
+	            }
+            }
+        }
+    }
+}

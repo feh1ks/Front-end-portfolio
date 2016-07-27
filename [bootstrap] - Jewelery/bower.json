@@ -1,0 +1,8 @@
+{
+    "name": "ProjectName",
+    "dependencies": {
+        "bootstrap" : "latest",
+        "owl-carousel2" : "latest",
+        "fontawesome" : "latest"
+    }
+}

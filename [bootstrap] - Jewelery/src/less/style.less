@@ -1,0 +1,110 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* Global Components
+======================================*/
+
+/* Headings */
+p {
+	color: @brand-light-gray;
+	font-size: 15.8px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+@{headings} {
+	color: @brand-gray;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 20px;
+}
+
+h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/* Section */
+section {
+	padding: 100px 0;
+
+	h1 {
+		margin-top: 100px;
+	}
+
+	@media @max-desktop {
+		padding: 50px 0;
+
+		h1 {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.section-header {
+	h2 {
+		margin-bottom: 25px;
+	}	
+
+	p {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+}
+
+/* Buttons transition */
+.btn {
+	.transition-all;
+}
+
+/* Social Colors Hover
+======================================*/
+a.fa-twitter:hover   {color: @twitter-col !important;}
+a.fa-facebook:hover  {color: @facebook-col !important;}
+a.fa-dribbble:hover  {color: @dribbble-col;}
+a.fa-google:hover    {color: @google-col;}
+
+/* No Indents Grid
+======================================*/
+.no-indents > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+  
+  .img-responsive {
+    min-width: 100%;
+  }
+}
+
+@media @max-desktop {
+	.no-indents > .col-md-3 {
+	    width: 50%;
+	    float: left;
+	}
+}
+
+/* Import Sections Styles
+======================================*/
+@import "templates/1_header_plus_nav.less";
+@import "templates/2_history.less";
+@import "templates/3_how_it_work.less";
+@import "templates/4_slider.less";
+@import "templates/5_why.less";
+@import "templates/6_our_works.less";
+@import "templates/7_comments.less";
+@import "templates/8_photoblog.less";
+@import "templates/9_footer.less";
